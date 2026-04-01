@@ -1,6 +1,4 @@
-=IF(AND(C237<>"", D237=""), "Missing from NEW", IF(TRIM(C237)<>TRIM(D237), "Mismatch", ""))
-
-=SUMPRODUCT((TRIM(INDEX('Old'!$A$2:$ZZ$9491, 0, ROW(A1)))<>"")*(TRIM(INDEX('New'!$A$2:$ZZ$9491, 0, ROW(A1)))=""))
+=SUMPRODUCT((TRIM(INDEX('New'!$A$2:$ZZ$9491, 0, ROW(A1)))<>"")*(TRIM(INDEX('Old'!$A$2:$ZZ$9491, 0, ROW(A1)))=""))
 
 
 # 📝 Auto Form Filler (Enhanced)
