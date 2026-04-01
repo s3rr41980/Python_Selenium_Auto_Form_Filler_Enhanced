@@ -1,3 +1,7 @@
+=IF(OR(C2="", D2=""), "Missing Data", IF(TRIM(C2)<>TRIM(D2), "Mismatch", ""))
+
+=IF(AND(TRIM(C2)=TRIM(D2), C2<>D2), "Space Issue", "")
+
 # 📝 Auto Form Filler (Enhanced)
 
 Week 3 Project for **Python 2 (Intermediate Module)**  
