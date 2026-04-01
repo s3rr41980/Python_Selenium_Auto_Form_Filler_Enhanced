@@ -1,6 +1,5 @@
-Old contains but new does not
+=IF(AND(C237<>"", D237=""), "Missing from NEW", IF(TRIM(C237)<>TRIM(D237), "Mismatch", ""))
 
-=SUMPRODUCT((INDEX('New'!$A$2:$ZZ$9491, 0, ROW(A1))<>"")*(INDEX('Old'!$A$2:$ZZ$9491, 0, ROW(A1))=""))
 
 # 📝 Auto Form Filler (Enhanced)
 
