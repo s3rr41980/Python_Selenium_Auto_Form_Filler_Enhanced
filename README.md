@@ -1,3 +1,7 @@
+Old contains but new does not
+
+=SUMPRODUCT((INDEX('New'!$A$2:$ZZ$9491, 0, ROW(A1))<>"")*(INDEX('Old'!$A$2:$ZZ$9491, 0, ROW(A1))=""))
+
 # 📝 Auto Form Filler (Enhanced)
 
 Week 3 Project for **Python 2 (Intermediate Module)**  
