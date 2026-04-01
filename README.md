@@ -1,7 +1,3 @@
-=SUMPRODUCT((TRIM(INDEX('NEW'!$A$2:$A$9491,,ROW(A1)))<>TRIM(INDEX('NEW'!$B$2:$B$9491,,ROW(A1))))*(INDEX('NEW'!$A$2:$A$9491,,ROW(A1))<>""))
-
-=SUMPRODUCT((TRIM(INDEX('NEW'!$A$2:$A$9491,,ROW(A1)))=TRIM(INDEX('NEW'!$B$2:$B$9491,,ROW(A1))))*(INDEX('NEW'!$A$2:$A$9491,,ROW(A1))<>INDEX('NEW'!$B$2:$B$9491,,ROW(A1))))
-
 # 📝 Auto Form Filler (Enhanced)
 
 Week 3 Project for **Python 2 (Intermediate Module)**  
