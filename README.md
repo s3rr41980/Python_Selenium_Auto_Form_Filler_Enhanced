@@ -1,6 +1,4 @@
-=IF(OR(C2="", D2=""), "Missing Data", IF(TRIM(C2)<>TRIM(D2), "Mismatch", ""))
-
-=IF(AND(TRIM(C2)=TRIM(D2), C2<>D2), "Space Issue", "")
+=SUMPRODUCT((TRIM(INDEX('New'!$A$2:$ZZ$9491, 0, ROW(A1)))<>TRIM(INDEX('Old'!$A$2:$ZZ$9491, 0, ROW(A1))))*(INDEX('New'!$A$2:$ZZ$9491, 0, ROW(A1))<>"")*(INDEX('Old'!$A$2:$ZZ$9491, 0, ROW(A1))<>""))
 
 # 📝 Auto Form Filler (Enhanced)
 
