@@ -1,29 +1,3 @@
-Update: 
-I have completed the overview page for quick assessment of data quality issues and reconciliation gaps for all 150+ columns (excluding missing PKs from CURRENT) and validated the results.
-
-It provides per column metrics:
-- row counts
-- null counts
-- distinct counts
-- count differences
-- count of data missing in NEW
-- count of data missing in CURRENT
-- count of data mismatches
-- count of data with leading/trailing white spaces
-
-This should allow teams to quickly identify affected areas and use filters on the data source page or utilise new tabs for further investigation.
-
-I’ll also be able to reuse this template by replacing source data for the remaining 14 files and future reconciliation efforts, which should significantly reduce effort subsequently.
-
-Question:
-Identifying cell-level discrepancies row-by-row by PK for all 150 columns would require significant additional effort. In order to reduce manual and subsequent efforts, I’m looking at the possibility of creating a single sheet that produces this result which dynamically changes according to column name selected via drop-down.
-
-Let me know if which you’d like me to prioritise:
-
-1. a detailed PK-level breakdown for specific columns manually for 2 of the most urgently files
-2. a reusable sheet that shows the same breakdown, but can adapt via selected column, and can be reused for subsequent/future files
-
-
 # 📝 Auto Form Filler (Enhanced)
 
 Week 3 Project for **Python 2 (Intermediate Module)**  
