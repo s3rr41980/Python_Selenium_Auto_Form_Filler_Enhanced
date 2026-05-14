@@ -54,3 +54,25 @@ Built an **enhanced end-to-end pipeline** that **generates synthetic records**, 
 - **Privacy step:** Removes NRIC before submission (`valid_data_without_nric`) whilst still allowing database storage of the cleaned full record.  
 - **Database integration:** Optional PostgreSQL storage for downstream analytics or audit.  
 - **Resilient selectors:** Locates inputs by question **labels** (works across text/email/tel/textarea widgets).
+
+Evolving Mapping Sheet
+1. Unnotified ad-hoc changes - Mapping requirements that impact 50 over tables remain fluid even when close to going live, leading to significant "back-and-forth" cycles, rework and repeated validation cycles. The uncertainty on core business logic creates a dependency bottleneck, preventing WS3 from reaching a "Definition of Done" and increasing downstream logic risks.
+2. Absence of Change Governance & Version Control - For most part, not sure what was changed, when was it changed. This forces WS3 into time-consuming investigative work just to determine if an issue is a genuine code defect or a silent requirement change.
+3. Cross-Document Contradictions - Contradictions between mapping sheets, summary sheets, and expected business logic created uncertainty on which implementation path should be followed, forcing developers to pause and guess the correct implementation path.
+
+Requirement Integrity and Scope Creep
+1. "Day 2" Requests logged as Defects - Observed JIRA ticket being raised as "Defects" that, upon investigation, were Day 2 changes, leading unnecessary investigation time
+2. Scope Creep in Disguise  - Several issues filed as defects are often change requests or clarifications. This shifts the burden of requirement discovery and triage onto WS3, consuming critical engineering bandwidth
+
+
+Ambiguity Tax and Cognitive Load
+1. Under-Specified Requirements - Incomplete, fragmented statements and information mismatches result in a high cognitive load. Significant development time is spent investigating, validating, and clarifying across reports to compensate for these upstream gaps
+2. Complex Dependency Tracing (SNG, GFT) - Resolving a single JIRA frequently requires tracing logic across multiple dependency tables and disparate environments, substantially increasing cognitive load and implementation/review effort.
+
+
+Potential Improvement Areas:
+1. Stronger mapping version control / change tracking
+2. Clearer ownership and sign-off on contested business logic before tickets are assigned to development
+3. More standardised Jira requirement formatting template
+4. Use clearer verbiage, eliminate ambiguous phrasing to reduce guesswork which in return lower developer cognitive load, accelerating execution velocity
+5. Implement cut-off date for new requirements to allow adequate time for stabilisation
